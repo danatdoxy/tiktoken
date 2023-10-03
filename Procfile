@@ -1,1 +1,1 @@
-web: Tiktoken.py
+web: python Tiktoken.py
