@@ -15,6 +15,5 @@ def count_tokens():
     text = data.get('text', '')
     token_count = len(enc.encode(text))
     return jsonify({"token_count": token_count})
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
