@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, abort
 import tiktoken
+import os
 
 app = Flask(__name__)
 enc = tiktoken.encoding_for_model("gpt-3.5-turbo")
